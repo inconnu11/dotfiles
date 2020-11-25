@@ -278,8 +278,7 @@ autocmd BufReadPost *
 
 au BufRead,BufNewFile *.md set filetype=markdown  " .md default is modula2
 
-" Execute pyth
-on file being edited with <Shift> + e:
+" Execute python file being edited with <Shift> + e:
 map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
 
 " Auto add head info
